@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+.video-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+iframe{
+    max-width: 100%;
+    width: 560px;
+    height: 315px;
+}
+.heading-container{
+    margin-top: 30px;
+}
+@media(max-width: 1024px){
+    iframe{
+        width: 480px;
+        height: 270px;
+    }
+}
+@media(max-width: 768px){
+    iframe{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+    .heading-container{
+        margin-top: 30px;
+    }
+}
